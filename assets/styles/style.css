@@ -136,6 +136,10 @@ section#results {
     cursor: pointer; 
 }
 
+#searchInput {
+    width: 100% !important;
+}
+
 
 
 

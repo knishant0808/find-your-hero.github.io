@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Superhero Details</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="./assets/styles/hero-detail.css">
 </head>
 
@@ -24,7 +25,7 @@
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Favourites</a>
+                    <a class="nav-link" href="favourites.html">Favourites</a>
                 </li>
             </ul>
         </div>
@@ -36,6 +37,7 @@
             </div>
             <div class="col-md-6">
                 <h2 id="heroName"></h2>
+                <i id="favoriteIcon" class="fa-heart fas" onclick="toggleFavoriteOnDetailPage()"></i>
                 <p id="heroDescription"></p>
             </div>
         </div>

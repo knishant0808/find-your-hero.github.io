@@ -12,7 +12,11 @@ body {
 }
 
 .navbar {
-    margin-bottom: 50px;
+    background: linear-gradient(to right, black, rgb(148, 4, 4));
+}
+
+.navbar-brand{
+    margin-left: 20px;
 }
 
 .container {

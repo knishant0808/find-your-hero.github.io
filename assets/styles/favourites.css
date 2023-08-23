@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('../images/favourite-background.jpg') no-repeat center center fixed; 
+    background-size: cover; 
+    height: 100vh; 
+    width: 100vw; 
+    overflow-x: hidden; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    background: linear-gradient(to right, black, rgb(148, 4, 4));
+}
+
+.navbar-brand{
+    margin-left: 20px;
+}
+
+.card .card-body {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.card {
+    padding: 0;
+    margin: 100px;
+    border: none;
+}
+
+.card a {
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%; 
+    position: relative; 
+    overflow: hidden; 
+    height: 300px;
+}
+
+.card-img-top, .hero-image {
+    display: block;
+    margin: 0 auto; 
+    min-width: 100%;  
+    height: 100%; 
+    object-fit: cover; 
+}

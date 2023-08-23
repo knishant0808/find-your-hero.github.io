@@ -1,12 +1,14 @@
+<!-- favorite.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Superhero Hunter</title>
+    <title>Favorite Superheroes</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/favourites.css">
+    <!-- Add your stylesheets and other meta tags as required -->
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -27,37 +29,13 @@
             </ul>
         </div>
     </nav>
-    <!-- <div class="container mt-4">
-        <div class="row">
-            <div class="col-md-8">
-                <input type="text"id="searchInput" class="form-control" placeholder="Search for a superhero...">
-                <div id="suggestions" class="list-group"></div> 
-            </div>
-            
-            <div class="col-md-3">
-                <button id="searchBtn" class="btn btn-primary btn-block">Search</button>
-            </div>
-        </div>
-        <div class="row mt-4" id="results"></div>
-    </div> -->
-    <div class="container mt-4 d-flex align-items-center" style="height: 100vh;">
-        <div class="row justify-content-center w-100">
-            <div class="col-md-8">
-                <input type="text" id="searchInput" class="form-control w-100" placeholder="Search for a superhero...">
-                <div id="suggestions" class="list-group"></div>
-            </div>
-        </div>
-        <div class="row mt-4" id="results"></div>
-    </div>
-    
-    
-    <div class="random-superheroes-container">
-        <div class="container">
-            <h2 class="random-superheroes-heading">Featured</h2>
-            <div class="row mt-4" id="randomSuperheroes"></div>
+    <div>
+        <h1>My Favorite Superheroes</h1>
+        <div id="favoriteSuperheroes" class="row">
+            <!-- Heroes will be dynamically added here -->
         </div>
     </div>
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/favourites.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
