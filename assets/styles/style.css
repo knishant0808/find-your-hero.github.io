@@ -1,0 +1,131 @@
+body {
+    /* Assuming the navbar has a fixed height. */
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('../images/home-background.jpg') no-repeat center center fixed; 
+    background-size: cover; /* This makes the background image responsive */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    overflow-x: hidden; /* Ensures the width doesn't cause horizontal scrolling */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.navbar {
+    background: linear-gradient(to right, black, rgb(148, 4, 4));
+}
+
+.navbar-brand{
+    margin-left: 20px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+}
+
+section#results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.container {
+    flex: 1;
+    /* ... any other styles ... */
+}
+
+
+.card {
+    width: 200px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#suggestions {
+    position: absolute;
+    width: 100%;
+    max-height: 350px;
+    overflow-y: auto;
+    z-index: 1000;
+    border-top: none;
+}
+
+.suggestion-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between the image and the name */
+}
+
+.suggestion-img {
+    width: 50px; /* Adjust as needed */
+    height: 50px;
+    border-radius: 50%; /* Makes the image circular, remove if not wanted */
+    object-fit: cover; /* Makes sure image retains its aspect ratio */
+}
+
+.random-superheroes-container {
+    background-color: rgba(255, 255, 255, 0.7); /* Optional: A light background for differentiation */
+    padding: 20px 0; /* Spacing */
+    padding-bottom: 20px;
+}
+
+.random-superheroes-heading{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.random-hero {
+    position: relative;
+    height: 250px; /* Adjust this if you need a different height */
+    overflow: hidden;
+}
+
+.random-hero-image {
+    width: 100%;  
+    height: 100%;  
+    object-fit: cover;  
+    object-position: center;  
+    z-index: 1;
+}
+
+.hero-name {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; /* Span the full width of the parent */
+    height: 15%; /* Set to 15% of the parent's height */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);  
+    padding: 5px 0; /* padding top and bottom, zero on sides */
+    box-sizing: border-box; /* This ensures that padding is within the height and width */
+    border-radius: 0; /* removing border radius */
+    text-align: center; /* to center text horizontally */
+    z-index: 2; /* Make sure the name appears above the image */
+    display: flex; /* Use flexbox to center the contents */
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
+    margin: 0; /* Ensure no margin */
+}
+
+
+
+
+

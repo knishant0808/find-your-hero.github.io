@@ -1,0 +1,90 @@
+/* General styling */
+body {
+    /* Assuming the navbar has a fixed height. */
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('../images/hero-detail-background.jpg') no-repeat center center fixed; 
+    background-size: cover; /* This makes the background image responsive */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    overflow-x: hidden; /* Ensures the width doesn't cause horizontal scrolling */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    margin-bottom: 50px;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.6);  /* White background with 80% opacity */
+    padding: 20px;  /* Adding some padding for better visual separation */
+    border-radius: 10px;  /* Optional: Adds rounded corners to the container */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);  /* Optional: Adds a subtle shadow for depth */
+}
+
+
+/* Superhero details styling */
+#heroImage {
+    width: 100%;  /* Set the width of the image to fill its container */
+    max-height: 400px;  /* Adjust this value according to your preferred height */
+    object-fit: cover;  /* This ensures the image will cover the entire dimensions of its container without stretching or squishing */
+    display: block;  /* This removes any whitespace underneath the image */
+    margin: 0 auto;  /* This will center the image within its container */
+}
+
+#heroName {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+#heroDescription {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #555;
+}
+
+/* List of comics, stories, events, series styling */
+.list-container {
+    margin-top: 40px;
+}
+
+.list-title {
+    font-size: 1.5em;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.list-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.list-item {
+    flex: 1 1 calc(33.333% - 20px); /* Three items per row */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.list-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .list-item {
+        flex: 1 1 calc(50% - 20px); /* Two items per row */
+    }
+}
+
+@media (max-width: 576px) {
+    .list-item {
+        flex: 1 1 100%; /* One item per row */
+    }
+}

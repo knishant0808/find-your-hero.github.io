@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superhero Details</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/hero-detail.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="./assets/images/marvel-brand.jpg" width="90" height="40" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Favourites</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <img id="heroImage" src="" alt="Superhero Image" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h2 id="heroName"></h2>
+                <p id="heroDescription"></p>
+            </div>
+        </div>
+        <!-- Comics -->
+        <div class="list-container row mt-4">
+            <div class="col-12">
+                <h3 class="list-title">Comics:</h3>
+                <div class="list-items" id="heroComics"></div>
+            </div>
+        </div>
+
+        <!-- Stories -->
+        <div class="list-container row mt-4">
+            <div class="col-12">
+                <h3 class="list-title">Stories:</h3>
+                <div class="list-items" id="heroStories"></div>
+            </div>
+        </div>
+
+        <!-- Events -->
+        <div class="list-container row mt-4">
+            <div class="col-12">
+                <h3 class="list-title">Events:</h3>
+                <div class="list-items" id="heroEvents"></div>
+            </div>
+        </div>
+
+        <!-- Series -->
+        <div class="list-container row mt-4">
+            <div class="col-12">
+                <h3 class="list-title">Series:</h3>
+                <div class="list-items" id="heroSeries"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./assets/js/hero_detail.js"></script>
+</body>
+
+</html>
